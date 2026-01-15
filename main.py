@@ -35,4 +35,6 @@ async def asksomething(request: ChatRequest):
         answer = "Thank you for asking I am fine"
     elif query == "what is your name?":
         answer = "My name is chatbot and i am not a terrorist"
+    else:
+        answer = "i don't know"
     return ChatResponse(response=answer)
