@@ -26,7 +26,7 @@ class ChatResponse(BaseModel):
 async def root():
     return {"message": "Hello World"}
 
-# Corrected POST endpoint
+# Corrected POST endpointhow are you
 @app.post("/chat")
 async def asksomething(request: ChatRequest):
     print(f"Received query: {request.query}")
